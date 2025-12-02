@@ -1,0 +1,31 @@
+:root{
+  --bg: linear-gradient(135deg,#ffe29f,#ffa99f);
+  --card-bg: rgba(255,255,255,0.9);
+}
+*{box-sizing:border-box;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;}
+html,body{height:100%;margin:0}
+body{
+  display:grid;place-items:center;
+  background:var(--bg);
+  padding:2rem;
+}
+.card{
+  width:min(720px,95vw);
+  background:var(--card-bg);
+  border-radius:18px;
+  padding:28px;
+  box-shadow:0 10px 30px rgba(0,0,0,0.12);
+  text-align:center;
+  position:relative;
+}
+h1{font-size:2.6rem;margin:0 0 .25rem}
+p{margin:.25rem 0 1rem;color:#333;font-size:1.05rem}
+#meta{font-size:.9rem;color:#555;margin-bottom:14px}
+.controls{display:flex;gap:8px;justify-content:center;margin:12px 0}
+.controls input[type="text"], .controls input#shareLink{
+  padding:8px 10px;border-radius:8px;border:1px solid #ddd;min-width:200px;
+}
+.controls button{padding:8px 12px;border-radius:8px;border:0;background:#ff7a7a;color:white;cursor:pointer}
+#playConfetti{margin-top:8px;padding:8px 12px;border-radius:10px;border:0;background:#6a8bff;color:white;cursor:pointer}
+canvas{position:fixed;left:0;top:0;pointer-events:none;z-index:999}
+@media (max-width:520px){h1{font-size:1.8rem}}
