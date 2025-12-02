@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Birthday 🎉</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="card">
+    <h1 id="greeting">Happy Birthday!</h1>
+    <p id="message">Wishing you a wonderful day.</p>
+    <div id="meta"></div>
+
+    <div class="controls">
+      <input id="nameInput" placeholder="Type a name..." />
+      <button id="makeLink">Create shareable link</button>
+      <input id="shareLink" readonly />
+    </div>
+
+    <button id="playConfetti">Celebrate 🎊</button>
+  </div>
+
+  <canvas id="confettiCanvas"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
